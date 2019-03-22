@@ -81,5 +81,9 @@ p {
 }
 
 .picture2 {
-	background-image: url("Images/Picture2.jpg"); /* Sets background image */  
+  background-image: url("Images/Picture2.jpg"); /* Sets background image */  
+}
+
+.picture3 {
+  background-image: url("Images/Picture3.jpg"); /* Sets background image */
 }
