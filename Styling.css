@@ -55,6 +55,7 @@ p {
   color: #fff;
   background-color: #111;
   padding: 25px;
+  text-transform: uppercase;
 }
 
 .parallax {
