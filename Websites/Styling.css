@@ -24,21 +24,17 @@ h1 {
 }
 
 .parallax {
-  background-image: url('Images/Picture2.jpg');
-  height: 150px;
+  height: 250px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 250px;
 }
+.picture1 {
+  background-image: url('Images/Picture1.jpg');  
+}
 
-.parallax-2 {
-  background-image: url('Images/Picture1.jpg');
-  height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 250px;
+.picture2 {
+	background-image: url("Images/Picture2.jpg");
 }
