@@ -1,2 +1,1 @@
-# projectshorterthanalan
-title
+# College Project
