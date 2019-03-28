@@ -59,16 +59,25 @@ p {
 }
 
 .parallax {
-  padding-top: 250px; /* Sets distance between content and top edge of element */
-  height: 250px; /* Sets element height */
+  padding-top: 25vh; /* Sets distance between content and top edge of element */
+  padding-bottom: 25vh; /* Sets distance between content and bottom edge of element */
   background-attachment: fixed; /* Background will not scroll with the page */
   background-position: center; /* Background image centered */
   background-repeat: no-repeat; /* Background will not repeat if unable to fill page */
   background-size: cover; /* Background big enough to cover entire page */
 }
 
+.parallax-java {
+  padding-top: 25vh; /* Sets distance between content and top edge of element */
+  padding-bottom: 25vh; /* Sets distance between content and bottom edge of element */
+  background-position: center; /* Background image centered */
+  background-repeat: no-repeat; /* Background will not repeat if unable to fill page */
+  background-size: cover; /* Background big enough to cover entire page */
+  height: 100% /* Sets element height to 100% of it's parent height */
+}
+
 .parallax-start {
-  height: 75%; /* Sets height to 75% of window size */
+  height: 50%; /* Sets height to 50% of window size */
 }
 
 .low-contrast {
@@ -77,11 +86,11 @@ p {
 }
 
 .picture1 {
-  background-image: url('Images/Picture1.jpg'); /* Sets background image */  
+  background-image: url('Images/Picture1.jpg'); /* Sets background image */
 }
 
 .picture2 {
-  background-image: url("Images/Picture2.jpg"); /* Sets background image */  
+  background-image: url("Images/Picture2.jpg"); /* Sets background image */
 }
 
 .picture3 {
