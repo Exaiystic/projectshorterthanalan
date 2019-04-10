@@ -55,6 +55,12 @@ h3 {
   font-size: 20px; /* Sets font size */
 }
 
+h4 {
+  letter-spacing: 5px; /* Sets spacing between letters */
+  text-transform: uppercase; /* Converts text to uppercase */
+  font-size: 15px; /* Sets font size */
+}
+
 p {
   color: #777; /* Sets color of text */
   display: block; /* Sets how element will be formatted */
@@ -106,6 +112,10 @@ p {
 .low-contrast {
   filter: contrast(50%); /* Sets contrast to 50% */
   -webkit-filter: contrast(50%); /* Sets contrast to 50% (for safari 5.1 - 9.0) */
+}
+
+.link-button {
+  height: 5vh;
 }
 
 .picture1 {
