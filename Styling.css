@@ -14,6 +14,7 @@ body, html {
   text-align: center; /* Aligns elements to center */
   font: 400 15px/1.8 "Lato", sans-serif; /* Sets default font + sizing */
   font-size: 25px; /* Sets font size of unspecified elements */
+  scroll-behavior: smooth;
 }
 
 #navbar {
@@ -45,13 +46,20 @@ body, html {
 }
 
 h1 {
-  letter-spacing: 5px; /* Sets spacing between letters */
+  font-size: 50px; /* Sets font size */
+  letter-spacing: 10px; /* Sets spacing between letters */
+  color: #fff; /* Sets foreground (text) color */
+  background-color: #111; /* Sets fill (background) color */
+  padding: 25px 50px; /* Distance between content and edges of element */
   text-transform: uppercase; /* Converts text to uppercase */
+  display: inline
 }
 
 h2 {
-  letter-spacing: 5px; /* Sets spacing between letters */
+  letter-spacing: 15px; /* Sets spacing between letters */
   text-transform: uppercase; /* Converts text to uppercase */
+  display: inline block;
+  margin: 25px 0px 5px 0px;
 }
 
 h3 {
@@ -74,6 +82,11 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-size: 15px; /* Sets font size */
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 .content-container {
