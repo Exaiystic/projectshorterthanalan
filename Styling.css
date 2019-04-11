@@ -17,27 +17,25 @@ body, html {
 }
 
 #navbar {
-  font-family: "Merriweather", serif; /* Sets default font + sizing */
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  letter-spacing: 5px; /* Sets spacing between letters */
+  font-weight: bold;
+  text-transform: uppercase; /* Converts text to uppercase */
+  font-size: 15px; /* Sets font size */
   overflow: hidden;
   background-color: #fff;
-  color: #000000;
   z-index: 1;
 }
 
 #navbar a:hover {
   background-color: #474747;
-  color: #747474;
+  color: #fff;
 }
 
 #navbar a {
   display: block;
   text-align: center;
   float: left;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding: 10px 50px 10px 50px;
 }
 
 .sticky {
