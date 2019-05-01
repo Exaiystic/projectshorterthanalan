@@ -1,6 +1,4 @@
 /* Stylesheet */
-/* Style inspired by w3schools */
-/* https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm */
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather'); /* Imports fonts from google */
 
@@ -14,22 +12,22 @@ body, html {
   text-align: center; /* Aligns elements to center */
   font: 400 15px/1.8 "Lato", sans-serif; /* Sets default font + sizing */
   font-size: 25px; /* Sets font size of unspecified elements */
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Makes href scroll transitions smoother */
 }
 
 #navbar {
   letter-spacing: 5px; /* Sets spacing between letters */
-  font-weight: bold;
+  font-weight: bold; /* Forces font to be bold */
   text-transform: uppercase; /* Converts text to uppercase */
   font-size: 15px; /* Sets font size */
-  overflow: hidden;
-  background-color: #fff;
-  z-index: 1;
+  overflow: hidden; /* Hides any contant that extends past its boundaries */
+  background-color: #fff; /* Sets background colour to white */
+  z-index: 1; /* Arranges content to be one layer above everything by default unless specified (which is by default 0) */
 }
 
-#navbar a:hover {
-  background-color: #474747;
-  color: #fff;
+#navbar a:hover { /* Styling for when the element is being hovered over */
+  background-color: #474747; /* Sets background colour  of element */
+  color: #fff; /*  */
 }
 
 #navbar a {
