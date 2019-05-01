@@ -1,4 +1,10 @@
 /* Stylesheet */
+/* Made + Commented by Thomas Broughton */
+
+/* Padding adds distance between border and content */
+/* Margin adds distance between the two elements */
+/* Padding and margin goes in order top, right, bottom, left */
+/* CONTENT --> PADDING --> BORDER --> MARGIN */
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather'); /* Imports fonts from google */
 
@@ -26,21 +32,21 @@ body, html {
 }
 
 #navbar a:hover { /* Styling for when the element is being hovered over */
-  background-color: #474747; /* Sets background colour  of element */
-  color: #fff; /*  */
+  background-color: #474747; /* Sets background colour of element */
+  color: #fff; /* Sets foreground colour of element (text-colour) */
 }
 
 #navbar a {
-  display: block;
-  text-align: center;
-  float: left;
-  padding: 10px 50px 10px 50px;
+  display: block; /* Sets the display positioning to act like a block (cannot overlap) */
+  text-align: center; /* Aligns the text to the center of the element */
+  float: left; /* Contents lean towards the left of the container */
+  padding: 10px 50px 10px 50px; /* Adds space between the content and the border of the container */
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+  position: fixed; /* Position of the element is fixed to the browser viewport. Element will not move when scrolled */
+  top: 0; /* Element is positioned 0 pixels away from the top of the viewport */
+  width: 100%; /* Element is 100% of the viewport's width */
 }
 
 h1 {
@@ -50,14 +56,14 @@ h1 {
   background-color: #111; /* Sets fill (background) color */
   padding: 25px 50px; /* Distance between content and edges of element */
   text-transform: uppercase; /* Converts text to uppercase */
-  display: inline
+  display: inline /* Sets the display to be inline with the previous elements (if there is enough space) */
 }
 
 h2 {
   letter-spacing: 15px; /* Sets spacing between letters */
   text-transform: uppercase; /* Converts text to uppercase */
-  display: inline block;
-  margin: 25px 0px 5px 0px;
+  display: inline block; /* Displays the element in line with other elements (if there is space). However, it cannot overlap other elements */
+  margin: 25px 0px 5px 0px; /* Sets the gap between this element and others */
 }
 
 h3 {
@@ -77,14 +83,14 @@ p {
   display: block; /* Sets how element will be formatted */
   margin-block-start: 1em; /* Sets the distance between the element and the next, scales with font size */
   margin-block-end: 1em; /* Sets the distance between the element and the next, scales with font size */
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 0px; /* Sets the start of inline margins */
+  margin-inline-end: 0px; /* Sets the end of inline margins */
   font-size: 15px; /* Sets font size */
 }
 
 a {
-  text-decoration: none;
-  color: #000;
+  text-decoration: none; /* No decoration from outside sources */
+  color: #000; /* Sets colour of text to be black (overwrites the purple and blue colours of the text) */
 }
 
 .content-container {
@@ -131,7 +137,7 @@ a {
 }
 
 .link-button {
-  height: 5vh;
+  height: 5vh; /* Sets height to 5% of the viewport height */
 }
 
 .picture1 {
@@ -147,42 +153,42 @@ a {
 }
 
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  max-width: 1000px; /* Maximum width allowed */
+  position: relative; /* Position is relative to it's parent */
+  margin: auto; /* Margin automatically determined */
 }
 
 .slideshow {
-  display: none;
+  display: none; /* Nothing will be displayed */
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  height: 15px; /* Height of element */
+  width: 15px; /* Width of element */
+  margin: 0 2px; /* Gap between elements */
+  background-color: #bbb; /* Colour of background */
+  border-radius: 50%; /* How round the element border is */
+  display: inline-block; /* Display positioning of element */
+  transition: background-color 0.6s ease; /* How long it takes for the styling of the element to change */
 }
 
 .active {
-  background-color: #717171;
+  background-color: #717171; /* Background colour when dot it changed to active */
 }
 
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
-  animation-name: fade;
-  animation-duration: 3s;
+  -webkit-animation-name: fade; /* Gets animation style from webkit */
+  -webkit-animation-duration: 3s; /* Length of fade from webkit */
+  animation-name: fade; /* Gets animation style */
+  animation-duration: 3s; /* Length of fade*/
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {opacity: .0} /* Starting opacity of fade */
+  to {opacity: 1} /* Ending opacity of fade */
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {opacity: .0} /* Starting opacity of fade */
+  to {opacity: 1} /* Ending opacity of fade */
 }

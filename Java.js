@@ -1,19 +1,26 @@
-window.onscroll = function() {stickyNavbar()};
+//Made + Commented by Thomas Broughton
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+window.onscroll = function() {stickyNavbar()}; //Calls function whenever the window is scrolled
 
+var navbar = document.getElementById("navbar"); //Gets elements based on it's Id and stores in variable
+var sticky = navbar.offsetTop; //Stores how offset the navbar is from top of viewport in a variable
+
+//Function keeps the navigation bar at the top of the browser viewport, even if the user scrolls on the website. This is 
+//known as a 'sticky' navigation bar.
 function stickyNavbar() {
     if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
+      navbar.classList.add("sticky") 
     } else {
       navbar.classList.remove("sticky");
     }
 }
 
-var slideIndex = 0;
-showSlides();
+var slideIndex = 0; //Var for which slide the site should start on
+showSlides(); //Calls function without any condition being needed
 
+//This function makes the slideshow of the sponsors run automatically.
+//To change the length that each slide is displayed for, change the number 
+//on the 'setTimeout' line (line 36)
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("slideshow");
@@ -28,5 +35,5 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000);
+  setTimeout(showSlides, 5000);  // <---   <---   <---   CHANGE THIS LINE FOR A DIFFERENT INTERVAL (1000 = 1 SECOND)
 }
