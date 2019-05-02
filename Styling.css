@@ -84,7 +84,13 @@ h5 {
   font-size: 12px; /* Sets font size */
 }
 
-p, li {
+h6 {
+  letter-spacing: 1px; /* Sets spacing between letters */
+  text-transform: uppercase; /* Converts text to uppercase */
+  font-size: 10px; /* Sets font size */
+}
+
+p, li, td {
   color: #777; /* Sets color of text */
   display: block; /* Sets how element will be formatted */
   margin-block-start: 1em; /* Sets the distance between the element and the next, scales with font size */
@@ -92,6 +98,12 @@ p, li {
   margin-inline-start: 0px; /* Sets the start of inline margins */
   margin-inline-end: 0px; /* Sets the end of inline margins */
   font-size: 15px; /* Sets font size */
+}
+
+td {
+  display: inline-block; /* Sets how element will be formatted */
+  padding: 3px 16px 3px 0; /* Distance between content and border */
+  width: 150px; /* Element width */
 }
 
 b {
@@ -206,12 +218,16 @@ a {
 }
 
 .driverProfile {
-  height: 75%;
-  border: 1px solid black;
+  height: 75%; /* Sets div height to be 75% of it's parent height */
+  margin: 0 auto; /* Center aligns div */
+  display: block; /* Positions and displays element as if it was a block */
 }
 
 #driverPic {
-  margin: 16px;
-  width: 50%;
-  float: left;
+  margin: 12px 16px 0 0; /* Gap between elements */
+  width: 50%; /* How wide the element is (as long as it doesn't exceed max-width) */
+  max-width: 375px; /* Element not allowed to be wider than this value */
+  height: auto; /* Keeps image in the correct ratio */
+  float: left; /* Allows text to wrap around the right of the image */
+  display: block; /* Positions and displays element as if it was a block */
 }
