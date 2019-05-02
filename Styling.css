@@ -78,7 +78,13 @@ h4 {
   font-size: 15px; /* Sets font size */
 }
 
-p {
+h5 {
+  letter-spacing: 5px; /* Sets spacing between letters */
+  text-transform: uppercase; /* Converts text to uppercase */
+  font-size: 12px; /* Sets font size */
+}
+
+p, li {
   color: #777; /* Sets color of text */
   display: block; /* Sets how element will be formatted */
   margin-block-start: 1em; /* Sets the distance between the element and the next, scales with font size */
@@ -86,6 +92,12 @@ p {
   margin-inline-start: 0px; /* Sets the start of inline margins */
   margin-inline-end: 0px; /* Sets the end of inline margins */
   font-size: 15px; /* Sets font size */
+}
+
+b {
+  font-size: 12px;
+  text-transform: uppercase; /* Converts text to uppercase */
+  letter-spacing: 3px; /* Sets spacing between letters */
 }
 
 a {
@@ -191,4 +203,15 @@ a {
 @keyframes fade {
   from {opacity: .0} /* Starting opacity of fade */
   to {opacity: 1} /* Ending opacity of fade */
+}
+
+.driverProfile {
+  height: 75%;
+  border: 1px solid black;
+}
+
+#driverPic {
+  margin: 16px;
+  width: 50%;
+  float: left;
 }
