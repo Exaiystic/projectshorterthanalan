@@ -7,22 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NWT | Home</title> <!-- Name of page displayed in tab -->
     <link rel="stylesheet" type="text/css" href="Styling.css"> <!-- Import custom styling -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">  <!-- Custom font for icon use -->
   </head>
 
   <body>
   
     <div id="navbar">  <!-- Navigation bar -->
-      <a href="#home">Home</a>  <!-- Jumps page to location of href # -->
-      <a href="#about-us">About Us</a>  <!-- Jumps page to location of href # -->
-      <a href="#sponsors">Sponsors</a>  <!-- Jumps page to location of href # -->
-      <a href="#contact-us">Contact Us</a>  <!-- Jumps page to location of href # -->
+	
+	  <div class="navbarToggle" onclick="navToggle()">  <!-- Container for hamburger nav toggle -->
+	    <i class="fas fa-bars menu"></i>  <!-- Hamburger nav toggle -->
+	  </div>
+	
+      <a class="navLink" href="#home">Home</a>  <!-- Jumps page to location of href # -->
+      <a class="navLink" href="#about-us">About Us</a>  <!-- Jumps page to location of href # -->
+      <a class="navLink" href="#sponsors">Sponsors</a>  <!-- Jumps page to location of href # -->
+      <a class="navLink" href="#contact-us">Contact Us</a>  <!-- Jumps page to location of href # -->
     </div><a name="home"></a>  <!-- Location of navbar href, browser will jump here when clicked on navbar -->
 
-    <div class="parallax picture2 low-contrast parallax-start">  <!-- Container for page title. Class tags create parallax -->
-	  <div id="titleSubtitleContianer">  <!-- Container for title and subtitle -->
-		<h1>NWT</h1> <!-- Title -->
-		<h2>Motorsport</h2>  <!-- Subtitle -->
-	  </div>
+    <div class="parallax picture2 parallax-start">  <!-- Container for page title. Class tags create parallax -->
 	</div><a name="about-us"></a>  <!-- Location of navbar href, browser will jump here when clicked on navbar -->
   	
 	<div class="content-container">  <!-- Container for section of content -->

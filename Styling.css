@@ -31,12 +31,12 @@ body, html {
   z-index: 1; /* Arranges content to be one layer above everything by default unless specified (which is by default 0) */
 }
 
-#navbar a:hover { /* Styling for when the element is being hovered over */
+.navLink:hover { /* Styling for when the element is being hovered over */
   background-color: #474747; /* Sets background colour of element */
   color: #fff; /* Sets foreground colour of element (text-colour) */
 }
 
-#navbar a {
+.navLink {
   display: inline-block; /* Sets the display positioning to act like a block (cannot overlap) */
   text-align: center; /* Aligns the text to the center of the element */
   padding: 10px 50px 10px 50px; /* Adds space between the content and the border of the container */
@@ -46,6 +46,44 @@ body, html {
   position: fixed; /* Position of the element is fixed to the browser viewport. Element will not move when scrolled */
   top: 0; /* Element is positioned 0 pixels away from the top of the viewport */
   width: 100%; /* Element is 100% of the viewport's width */
+}
+
+.navbarToggle {
+  width: 100%; /* Sets width of element to max of it's parent */
+  text-align: right; /* Aligns the text to the right hand side */
+  box-sizing: border-box; /* Sizes the element */
+  background-color: white; /* Sets the background colour */
+  color: black; /* Sets foreground colour */
+  padding: 10px; /* Distance between border and content */
+  display: none; /* Does not display */
+}
+
+.menu {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 900px) { /* Styling used when browser size is smaller than set amount of pixels */
+  .navbarToggle {
+    display: block; /* Display of element takes up one line */
+	transition: 0.3s; /* Transition time */
+	
+	user-select: none; /* User cannot select text */
+   -webkit-user-select: none; /* User cannot select text */
+   -khtml-user-select: none; /* User cannot select text */
+   -moz-user-select: none; /* User cannot select text */
+   -ms-user-select: none; /* User cannot select text */
+  }
+  
+  .navbarToggle:hover {
+    background-color: #474747; /* Sets background colour of element */
+    color: #fff; /* Sets foreground colour of element (text-colour) */
+  }
+  
+  .navLink {
+	display: none; /* Sets the display positioning to act like a block (cannot overlap) */
+	text-align: center; /* Aligns the text to the center of the element */
+	padding: 10px 50px 10px 50px; /* Adds space between the content and the border of the container */
+  }
 }
 
 h1 {
