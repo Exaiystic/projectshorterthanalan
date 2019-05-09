@@ -27,7 +27,7 @@ body, html {
   text-transform: uppercase; /* Converts text to uppercase */
   font-size: 15px; /* Sets font size */
   overflow: hidden; /* Hides any contant that extends past its boundaries */
-  background-color: #fff; /* Sets background colour to white */
+  background-color: #fff; /* Sets background colour to #fff */
   z-index: 1; /* Arranges content to be one layer above everything by default unless specified (which is by default 0) */
 }
 
@@ -52,7 +52,7 @@ body, html {
   width: 100%; /* Sets width of element to max of it's parent */
   text-align: right; /* Aligns the text to the right hand side */
   box-sizing: border-box; /* Sizes the element */
-  background-color: white; /* Sets the background colour */
+  background-color: #fff; /* Sets the background colour */
   color: black; /* Sets foreground colour */
   padding: 10px; /* Distance between border and content */
   display: none; /* Does not display */
@@ -112,31 +112,31 @@ h2 {
   letter-spacing: 15px; /* Sets spacing between letters */
   text-transform: uppercase; /* Converts text to uppercase */
   display: inline block; /* Displays the element in line with other elements (if there is space). However, it cannot overlap other elements */
-  margin: 25px 0px 5px 0px; /* Sets the gap between this element and others */
+  margin: 35px 0px 5px 0px; /* Sets the gap between this element and others */
 }
 
 h3 {
   letter-spacing: 5px; /* Sets spacing between letters */
   text-transform: uppercase; /* Converts text to uppercase */
-  font-size: 20px; /* Sets font size */
+  font-size: 25px; /* Sets font size */
 }
 
 h4 {
   letter-spacing: 5px; /* Sets spacing between letters */
   text-transform: uppercase; /* Converts text to uppercase */
-  font-size: 15px; /* Sets font size */
+  font-size: 20px; /* Sets font size */
 }
 
 h5 {
   letter-spacing: 5px; /* Sets spacing between letters */
   text-transform: uppercase; /* Converts text to uppercase */
-  font-size: 12px; /* Sets font size */
+  font-size: 15px; /* Sets font size */
 }
 
 h6 {
   letter-spacing: 1px; /* Sets spacing between letters */
   text-transform: uppercase; /* Converts text to uppercase */
-  font-size: 10px; /* Sets font size */
+  font-size: 12px; /* Sets font size */
 }
 
 p, li, td {
@@ -146,17 +146,21 @@ p, li, td {
   margin-block-end: 1em; /* Sets the distance between the element and the next, scales with font size */
   margin-inline-start: 0px; /* Sets the start of inline margins */
   margin-inline-end: 0px; /* Sets the end of inline margins */
-  font-size: 15px; /* Sets font size */
+  font-size: 20px; /* Sets font size */
+}
+
+table {
+  width: 100%;
 }
 
 td {
-  display: inline-block; /* Sets how element will be formatted */
+  display: table-cell; /* Sets how element will be formatted */
   padding: 3px 16px 3px 0; /* Distance between content and border */
-  width: 150px; /* Element width */
+  width: 10%; /* Element width */
 }
 
 b {
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase; /* Converts text to uppercase */
   letter-spacing: 3px; /* Sets spacing between letters */
 }
@@ -267,16 +271,26 @@ a {
 }
 
 .driverProfile {
-  height: 75%; /* Sets div height to be 75% of it's parent height */
-  margin: 0 auto; /* Center aligns div */
-  display: block; /* Positions and displays element as if it was a block */
+  height: 100%; /* Sets div height to be 75% of it's parent height */
+  margin: 16px auto; /* Center aligns div */
+  display: inline-block; /* Positions and displays element as if it was a block */
+}
+
+.profileInfo {
+  
 }
 
 #driverPic {
-  margin: 12px 16px 0 0; /* Gap between elements */
+  margin: 10px 16px 15px 0; /* Gap between elements */
   width: 50%; /* How wide the element is (as long as it doesn't exceed max-width) */
-  max-width: 375px; /* Element not allowed to be wider than this value */
-  height: auto; /* Keeps image in the correct ratio */
-  float: left; /* Allows text to wrap around the right of the image */
-  display: block; /* Positions and displays element as if it was a block */
+  float: left;
+}
+
+.topSponsors {
+  margin-top: 35vh;
+  background-color: #fff;
+}
+
+#topSponsorsHeader {
+  padding: 16px 0;
 }
