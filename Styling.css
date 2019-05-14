@@ -289,7 +289,7 @@ a {
 
 #driverPic {
   margin: 10px 16px 15px 0; /* Gap between elements */
-  width: 50%; /* How wide the element is (as long as it doesn't exceed max-width) */
+  width: 25%; /* How wide the element is (as long as it doesn't exceed max-width) */
   display: block;
   float: left;
 }
