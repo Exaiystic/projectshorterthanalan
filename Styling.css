@@ -48,6 +48,12 @@ body, html {
 }
 
 .navbarToggle {
+  letter-spacing: 5px; /* Sets spacing between letters */
+  font-weight: bold; /* Forces font to be bold */
+  text-transform: uppercase; /* Converts text to uppercase */
+  font-size: 15px; /* Sets font size */
+  overflow: hidden; /* Hides any contant that extends past its boundaries */
+  z-index: 1; /* Arranges content to be one layer above everything by default unless specified (which is by default 0) */
   width: 100%; /* Sets width of element to max of it's parent */
   text-align: right; /* Aligns the text to the right hand side */
   box-sizing: border-box; /* Sizes the element */
@@ -58,7 +64,7 @@ body, html {
 }
 
 .menu {
-  font-size: 10vw;
+  font-size: 5vw;
 }
 
 .hidden {
@@ -73,7 +79,7 @@ body, html {
 
 @media screen and (max-width: 900px) { /* Styling used when browser size is smaller than set amount of pixels */ 
   body {
-    font: 400 5vw/1.8 "Lato", sans-serif; /* Sets default font + sizing */
+    font: 400 2vw/1.8 "Lato", sans-serif; /* Sets default font + sizing */
   }
   
   .navbarToggle {
