@@ -16,8 +16,7 @@
 body, html {
   height: 100%; /* Body takes up 100% of window size */
   text-align: center; /* Aligns elements to center */
-  font: 400 15px/1.8 "Lato", sans-serif; /* Sets default font + sizing */
-  font-size: 25px; /* Sets font size of unspecified elements */
+  font: 400 1vw/1.8 "Lato", sans-serif; /* Sets default font + sizing */
   scroll-behavior: smooth; /* Makes href scroll transitions smoother */
 }
 
@@ -59,14 +58,24 @@ body, html {
 }
 
 .menu {
-  font-size: 25px;
+  font-size: 10vw;
 }
 
 .hidden {
   display: none;
 }
 
-@media screen and (max-width: 900px) { /* Styling used when browser size is smaller than set amount of pixels */
+@media screen and (max-width: 1400px) {
+  body {
+    font: 400 1.5vw/1.8 "Lato", sans-serif; /* Sets default font + sizing */
+  }
+ }
+
+@media screen and (max-width: 900px) { /* Styling used when browser size is smaller than set amount of pixels */ 
+  body {
+    font: 400 5vw/1.8 "Lato", sans-serif; /* Sets default font + sizing */
+  }
+  
   .navbarToggle {
     display: block; /* Display of element takes up one line */
 	transition: 0.3s; /* Transition time */
@@ -146,7 +155,6 @@ p, li, td {
   margin-block-end: 1em; /* Sets the distance between the element and the next, scales with font size */
   margin-inline-start: 0px; /* Sets the start of inline margins */
   margin-inline-end: 0px; /* Sets the end of inline margins */
-  font-size: 20px; /* Sets font size */
 }
 
 table {
@@ -230,7 +238,6 @@ a {
 }
 
 .slideshow-container {
-  max-width: 1000px; /* Maximum width allowed */
   position: relative; /* Position is relative to it's parent */
   margin: 0 auto; /* Margin automatically determined */
 }
@@ -283,7 +290,15 @@ a {
 #driverPic {
   margin: 10px 16px 15px 0; /* Gap between elements */
   width: 50%; /* How wide the element is (as long as it doesn't exceed max-width) */
+  display: block;
   float: left;
+}
+
+@media screen and (max-width: 900px) {
+  #driverPic {
+    float: none;
+	margin: 0 auto;
+  }
 }
 
 .topSponsors {
