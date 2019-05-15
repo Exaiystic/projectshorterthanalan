@@ -1,5 +1,3 @@
-//Made + Commented by Thomas Broughton
-
 var slideIndex = 0; //Var for which slide the site should start on
 showSlides(); //Calls function without any condition being needed
 

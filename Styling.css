@@ -1,5 +1,4 @@
 /* Stylesheet */
-/* Made + Commented by Thomas Broughton */
 
 /* Padding adds distance between border and content */
 /* Margin adds distance between the two elements */
@@ -55,7 +54,7 @@ body, html {
   overflow: hidden; /* Hides any contant that extends past its boundaries */
   z-index: 1; /* Arranges content to be one layer above everything by default unless specified (which is by default 0) */
   width: 100%; /* Sets width of element to max of it's parent */
-  text-align: right; /* Aligns the text to the right hand side */
+  text-align: middle; /* Aligns the text to the right hand side */
   box-sizing: border-box; /* Sizes the element */
   background-color: #fff; /* Sets the background colour */
   color: black; /* Sets foreground colour */
@@ -63,7 +62,7 @@ body, html {
   display: none; /* Does not display */
 }
 
-.menu {
+#menu {
   font-size: 5vw;
 }
 
