@@ -183,7 +183,7 @@ a {
   background: #fff; /* Sets background color */
   padding: 50px 80px; /* Sets padding of top/bottom then left/right */
   z-index: 2; /* Sets the element 2 layers above the neutral layer (where everything unspecified is) */
-  text-align: justify; /* Each side of text has equal amount of distance between edges */
+  text-align: left; /* Each side of text has equal amount of distance between edges */
 }
 
 .span-header {
@@ -201,7 +201,6 @@ a {
   background-attachment: fixed; /* Background will not scroll with the page */
   background-position: center; /* Background image centered */
   background-repeat: no-repeat; /* Background will not repeat if unable to fill page */
-  background-size: cover; /* Background big enough to cover entire page */
 }
 
 .parallax-java {
@@ -238,7 +237,51 @@ a {
   background-image: url("Images/Picture3.jpg"); /* Sets background image */
 }
 
-.slideshow-container {
+.picture4 {
+  background-image: url('Images/Picture4.jpg'); /* Sets background image */
+}
+
+.picture5 {
+  background-image: url('Images/Picture5.jpeg'); /* Sets background image */
+}
+
+.picture6 {
+  background-image: url('Images/Picture6.jpg'); /* Sets background image */
+}
+
+.picture7 {
+  background-image: url('Images/Picture7.jpg'); /* Sets background image */
+}
+
+.picture8 {
+  background-image: url('Images/Picture8.jpg'); /* Sets background image */
+}
+
+.picture9 {
+  background-image: url('Images/Picture9.jpg'); /* Sets background image */
+}
+
+.picture10 {
+  background-image: url('Images/Picture10.jpg'); /* Sets background image */
+}
+
+.picture11 {
+  background-image: url('Images/Picture11.png'); /* Sets background image */
+}
+
+.picture12 {
+  background-image: url('Images/Picture12.png'); /* Sets background image */
+}
+
+.picture13 {
+  background-image: url('Images/Picture13.png'); /* Sets background image */
+}
+
+.picture14 {
+  background-image: url('Images/Picture14.jpg'); /* Sets background image */
+}
+
+.sponsors-container {
   position: relative; /* Position is relative to it's parent */
   margin: 0 auto; /* Margin automatically determined */
 }
@@ -279,18 +322,28 @@ a {
 }
 
 .driverProfile {
-  height: 100%; /* Sets div height to be 75% of it's parent height */
-  margin: 16px auto; /* Center aligns div */
+  height: 50%; /* Sets div height to be 75% of it's parent height */
+  margin: 0px 25px; /* Center aligns div */
   display: inline-block; /* Positions and displays element as if it was a block */
+  float: right;
 }
 
 .profileInfo {
-  
+  font-size: 1.40vw;
+}
+
+.profileInfo b {
+  font-size: 1vw;
+  color: #666;
+}
+
+.profileInfo li {
+  font-size: 1vw;
 }
 
 #driverPic {
   margin: 10px 16px 15px 0; /* Gap between elements */
-  width: 25%; /* How wide the element is (as long as it doesn't exceed max-width) */
+  width: 50%; /* How wide the element is (as long as it doesn't exceed max-width) */
   display: block;
   float: left;
 }
@@ -309,4 +362,21 @@ a {
 
 #topSponsorsHeader {
   padding: 16px 0;
+}
+
+#aboutUs {
+  margin: 0px 25px;
+  width: 150%;
+}
+
+.flexBox {
+  display: flex;
+}
+
+.socialMedia {
+  float: right;
+}
+
+.footer-content {
+  margin: 0 70px;
 }

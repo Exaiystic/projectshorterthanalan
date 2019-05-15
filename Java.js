@@ -1,5 +1,5 @@
 var slideIndex = 0; //Var for which slide the site should start on
-showSlides(); //Calls function without any condition being needed
+//showSlides(); //Calls function without any condition being needed
 
 //This function makes the slideshow of the sponsors run automatically.
 //To change the length that each slide is displayed for, change the number 
